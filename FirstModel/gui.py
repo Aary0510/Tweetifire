@@ -3,7 +3,7 @@ from os import system
 
 def fn(e,e1):
     save(e)
-    system("python3 Predictor1.py")
+    system("python3 PredictorModel.py")
     loadme(e1)
 
 def save(e):
