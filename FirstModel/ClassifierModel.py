@@ -1,4 +1,4 @@
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 import nltk
@@ -42,11 +42,11 @@ vect.fit(file.Tweets)
 Xdata = vect.transform(file.Tweets).toarray()
 Ydata = file.Value
 
-classifier = RandomForestClassifier()
-accuracy = cross_val_score(classifier, Xdata, Ydata, cv=5)
+classifier = LogisticRegression()
+
 classifier.fit(Xdata, Ydata)
 
-saveFile = 'RandomForestModel.sav'
+saveFile = 'LogisticRegModel.sav'
 pickle.dump(classifier, open(saveFile, 'wb'))
 
 saveVectorizer = 'vectorizer.pickle'
