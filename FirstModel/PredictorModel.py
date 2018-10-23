@@ -1,7 +1,7 @@
 import pandas as pd
 import pickle
 
-openFile = 'RandomForestModel.sav'
+openFile = 'LogisticRegModel.sav'
 saveVectorizer = 'vectorizer.pickle'
 
 predictor = pickle.load(open(openFile, 'rb'))
