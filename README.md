@@ -5,7 +5,6 @@
 Tweetifire is a python based web app to provide instant response to a tweet during a disaster. It uses a machine learning model trained on sample tweets, pre classified in need and availability classes, to predict the probability of each tweet into availability and need related tweets.
 
 • Need tweets refer to tweets showing requirement of some resources.
-
 • Availability tweets are the tweets depicting the extra resources available.
 
 It then segregates need related tweets and availability related tweets into separate sections.
